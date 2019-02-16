@@ -1,6 +1,6 @@
-"use strict"
+"use strict";
 
-class club {
+class footballClub {
   constructor(id, clubName, location, stadiumCapacity, league, squadSize) {
     this._id = id;
     this._clubName = clubName;
