@@ -27,4 +27,24 @@ class player {
   get skills() {
     return this._skills;
   }
+
+
+  set id(value) {
+    return this._id = value;
+  }
+  set number(value) {
+    return this._number = value;
+  }
+  set position(value) {
+    return this._position = value;
+  }
+  set preferredFoot(value) {
+    return this._preferredFoot = value;
+  }
+  set isReserved(value) {
+    return this._isReserved = value;
+  }
+  set skills(value) {
+    return this._skills = value;
+  }
 }

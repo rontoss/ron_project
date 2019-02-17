@@ -39,7 +39,9 @@ class getThingzzz {
 
   set length(value) { // setter function // 'value' can be anything it's just a variable.
     this._length = value;
-    console.log("The value has been set");
+    var answer = "The value has been set";
+    return answer;
+    //console.log("The value has been set");
   }
 
 }
@@ -47,4 +49,6 @@ class getThingzzz {
 var thing = new getThingzzz(45125);
 console.log(thing.length);
 
-thing.length = 2222222222222222222222222;
+thing.length = 222;
+
+console.log(thing.length);
