@@ -43,3 +43,5 @@ class footballClub {
     return this._roll = value;
   }
 }
+
+module.exports = footballClub;
