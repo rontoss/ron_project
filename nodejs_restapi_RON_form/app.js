@@ -6,6 +6,28 @@ const morgan = require('morgan')
 const mysql = require('mysql')
 const bodyParser = require('body-parser');
 
+class Guest {
+
+  constructor(firstname, lastname, address) {
+    this._firstname = firstname;
+    this._lastname = lastname;
+    this._address = address;
+
+  }
+
+  get firstname() {
+    return this._firstname;
+  }
+
+  set firstname(firstname) {
+    this._firstname = firstname;
+  }
+
+
+  // and so on
+
+}
+
 app.use(bodyParser.urlencoded({
   extended: false
 }));
@@ -14,7 +36,7 @@ app.use(express.static('./public'))
 
 app.use(morgan('short'))
 
-app.post('/guests_create', (req, res) => {
+app.post('/guests', (req, res) => {
   console.log("Trying to create a new guest...")
   console.log("How do we get the form data???")
 
@@ -29,6 +51,8 @@ app.post('/guests_create', (req, res) => {
   const country = req.body.create_country
   const emailAddress = req.body.create_emailAddress
 
+
+  //see oefentoets how to insert some using the class (Guest) above
   const queryString = "INSERT INTO guests (firstName, lastName, address, homeTown, postalCode, telephoneNumber, country, emailAddress) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"
   getConnection().query(queryString, [firstName, lastName, address, homeTown, postalCode, telephoneNumber, country, emailAddress], (err, results, fields) => {
     if (err) {
@@ -38,8 +62,8 @@ app.post('/guests_create', (req, res) => {
     }
     console.log("Inserted a new guest with id: ", results.insertId);
     //res.end("test test test")
-    res.redirect('back');
-  })
+    res.json(/* some */);
+  });
 
 })
 
