@@ -2,13 +2,13 @@
 
 class footballClub {
   constructor(id, clubName, location, stadiumCapacity, league, squadSize) {
-    this._id = id;
+    this._club_id = club_id;
     this._clubName = clubName;
     this._location = location;
     this._stadiumCapacity = stadiumCapacity;
     this._league = league;
   }
-  get id() {
+  get club_id() {
     return this._id;
   }
   get clubName() {
@@ -27,7 +27,7 @@ class footballClub {
     return this._squadSize;
   }
 
-  set id(value) {
+  set club_id(value) {
     return this._id = value;
   }
   set name(value) {
