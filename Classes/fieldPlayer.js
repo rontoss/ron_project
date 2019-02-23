@@ -44,8 +44,6 @@ class fieldPlayer {
     return this._physical;
   }
 
-
-
   set fieldPlayer_id(fieldPlayer_id) {
     this._fieldPlayer_id = fieldPlayer_id;
   }

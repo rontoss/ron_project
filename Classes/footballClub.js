@@ -1,12 +1,13 @@
 "use strict";
 
 class footballClub {
-  constructor(id, clubName, location, stadiumCapacity, league, squadSize) {
+  constructor(club_id, clubName, location, stadiumCapacity, league, squadSize) {
     this._club_id = club_id;
     this._clubName = clubName;
     this._location = location;
-    this._stadiumCapacity = stadiumCapacity;
+    this._stadiumCapacity = stadiumCapacity stadiumCapacity;
     this._league = league;
+    this._squadSize = squadSize;
   }
   get club_id() {
     return this._id;
@@ -27,20 +28,23 @@ class footballClub {
     return this._squadSize;
   }
 
-  set club_id(value) {
-    return this._id = value;
+  set club_id(club_id) {
+    this._club_id = club_id;
   }
-  set name(value) {
-    return this._name = value;
+  set clubName(clubName) {
+    this._clubName = clubName;
   }
-  set nationality(value) {
-    return this._nationality = value;
+  set location(location) {
+    this._location = location;
   }
-  set age(value) {
-    return this._age = value;
+  set stadiumCapacity(stadiumCapacity) {
+    this._stadiumCapacity = stadiumCapacity;
   }
-  set roll(value) {
-    return this._roll = value;
+  set league(league) {
+    this._league = league;
+  }
+  set squadSize(squadSize) {
+    this._squadSize = squadSize;
   }
 }
 

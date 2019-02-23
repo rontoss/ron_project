@@ -44,31 +44,31 @@ class goalkeeper {
     return this._positionScore;
   }
 
-  set goalkeeper_id(value) {
-    return this._goalkeeper_id = value;
+  set goalkeeper_id(goalkeeper_id) {
+    this._goalkeeper_id = goalkeeper_id;
   }
-  set number(value) {
-    return this._number = value;
+  set number(number) {
+    this._number = number;
   }
-  set preferredFoot(value) {
-    return this._preferredFoot = value;
+  set preferredFoot(preferredFoot) {
+    this._preferredFoot = preferredFoot;
   }
-  set isReserved(value) {
-    return this._isReserved = value;
+  set isReserved(isReserved) {
+    this._isReserved = isReserved;
   }
-  set diving(value) {
-    return this._diving = value;
+  set diving(diving) {
+    this._diving = diving;
   }
-  set handling(value) {
-    return this._handling = value;
+  set handling(handling) {
+    this._handling = handling;
   }
-  set kicking(value) {
-    return this._kicking = value;
+  set kicking(kicking) {
+    this._kicking = kicking;
   }
-  set reflexes(value) {
-    return this._reflexes = value;
+  set reflexes(reflexes) {
+    this._reflexes = reflexes;
   }
-  set positionScore(value) {
-    return this._position = value;
+  set positionScore(positionScore) {
+    this._position = positionScore;
   }
 }
