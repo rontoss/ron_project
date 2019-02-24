@@ -1,8 +1,10 @@
 "use strict"
 
 class goalkeeper {
-  constructor(goalkeeper_id, number, preferredFoot, isReserved, diving, handling, kicking, reflexes, positionScore) {
-    this._goalkeeper_id = id;
+  constructor(goalkeeper_id, firstName, lastName, number, preferredFoot, isReserved, diving, handling, kicking, reflexes, speed, positionScore) {
+    this._goalkeeper_id = goalkeeper_id;
+    this._firstName = firstName;
+    this._lastName = lastName;
     this._number = number;
     this._preferredFoot = preferredFoot;
     this._isReserved = isReserved;
@@ -10,11 +12,18 @@ class goalkeeper {
     this._handling = handling;
     this._kicking = kicking;
     this._reflexes = reflexes;
+    this._speed = speed;
     this._positionScore = positionScore;
 
   }
   get goalkeeper_id() {
     return this._goalkeeper_id;
+  }
+  get firstName() {
+    return this._firstName;
+  }
+  get lastName() {
+    return this._lastName;
   }
   get number() {
     return this._number;
@@ -37,12 +46,21 @@ class goalkeeper {
   get reflexes() {
     return this._reflexes;
   }
+  get speed() {
+    return this._speed;
+  }
   get positionScore() {
     return this._positionScore;
   }
 
   set goalkeeper_id(goalkeeper_id) {
     this._goalkeeper_id = goalkeeper_id;
+  }
+  set firstName(firstName) {
+    this._firstName = firstName;
+  }
+  set lastName(lastName) {
+    this._lastName = lastName;
   }
   set number(number) {
     this._number = number;
@@ -64,6 +82,9 @@ class goalkeeper {
   }
   set reflexes(reflexes) {
     this._reflexes = reflexes;
+  }
+  set speed(speed) {
+    this._speed = speed;
   }
   set positionScore(positionScore) {
     this._position = positionScore;
