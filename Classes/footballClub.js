@@ -5,12 +5,12 @@ class footballClub {
     this._club_id = club_id;
     this._clubName = clubName;
     this._location = location;
-    this._stadiumCapacity = stadiumCapacity stadiumCapacity;
+    this._stadiumCapacity = stadiumCapacity;
     this._league = league;
     this._squadSize = squadSize;
   }
   get club_id() {
-    return this._id;
+    return this._club_id;
   }
   get clubName() {
     return this._clubName;

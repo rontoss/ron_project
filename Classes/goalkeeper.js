@@ -31,15 +31,12 @@ class goalkeeper {
   get handling() {
     return this._handling;
   }
-
   get kicking() {
     return this._kicking;
   }
-
   get reflexes() {
     return this._reflexes;
   }
-
   get positionScore() {
     return this._positionScore;
   }
@@ -72,3 +69,5 @@ class goalkeeper {
     this._position = positionScore;
   }
 }
+
+module.exports = goalkeeper;

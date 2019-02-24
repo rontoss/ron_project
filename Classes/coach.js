@@ -40,3 +40,5 @@ class coachingStaff {
     name this._roll = roll;
   }
 }
+
+module.exports = coachingStaff;

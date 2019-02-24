@@ -9,6 +9,10 @@ class fieldPlayer {
     this._isReserved = isReserved;
     this._pace = pace;
     this._shooting = shooting;
+    this._passing = passing;
+    this._dribble = dribble;
+    this._defending = defending;
+    this._physical = physical;
   }
   get fieldPlayer_id() {
     return this.fieldPlayer_id;
@@ -78,3 +82,5 @@ class fieldPlayer {
     this._physical = physical;
   }
 }
+
+module.exports = fieldPlayer;
