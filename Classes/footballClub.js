@@ -1,16 +1,16 @@
 "use strict";
 
 class footballClub {
-  constructor(club_id, clubName, location, stadiumCapacity, league, squadSize) {
-    this._club_id = club_id;
+  constructor(id, clubName, location, stadiumCapacity, league, squadSize) {
+    this._id = id;
     this._clubName = clubName;
     this._location = location;
     this._stadiumCapacity = stadiumCapacity;
     this._league = league;
     this._squadSize = squadSize;
   }
-  get club_id() {
-    return this._club_id;
+  get id() {
+    return this._id;
   }
   get clubName() {
     return this._clubName;
@@ -28,8 +28,8 @@ class footballClub {
     return this._squadSize;
   }
 
-  set club_id(club_id) {
-    this._club_id = club_id;
+  set id(id) {
+    this._id = id;
   }
   set clubName(clubName) {
     this._clubName = clubName;

@@ -1,8 +1,8 @@
 "use strict"
 
 class goalkeeper {
-  constructor(goalkeeper_id, firstName, lastName, number, preferredFoot, isReserved, diving, handling, kicking, reflexes, speed, positionScore) {
-    this._goalkeeper_id = goalkeeper_id;
+  constructor(id, firstName, lastName, number, preferredFoot, isReserved, diving, handling, kicking, reflexes, speed, positionScore) {
+    this._id = id;
     this._firstName = firstName;
     this._lastName = lastName;
     this._number = number;
@@ -16,8 +16,8 @@ class goalkeeper {
     this._positionScore = positionScore;
 
   }
-  get goalkeeper_id() {
-    return this._goalkeeper_id;
+  get id() {
+    return this._id;
   }
   get firstName() {
     return this._firstName;
@@ -53,8 +53,8 @@ class goalkeeper {
     return this._positionScore;
   }
 
-  set goalkeeper_id(goalkeeper_id) {
-    this._goalkeeper_id = goalkeeper_id;
+  set id(id) {
+    this._id = id;
   }
   set firstName(firstName) {
     this._firstName = firstName;

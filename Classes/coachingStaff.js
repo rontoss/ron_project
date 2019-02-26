@@ -1,14 +1,14 @@
 "use strict"
 
 class coachingStaff {
-  constructor(coachingStaff_id, firstName, lastName, roll) {
-    this._coachingStaff_id = coachingStaff_id;
+  constructor(id, firstName, lastName, roll) {
+    this._id = id;
     this._firstName = firstName;
     this._lastName = lastName;
     this._roll = roll;
   }
-  get coachingStaff_id() {
-    return this._coachingStaff_id;
+  get id() {
+    return this._id;
   }
   get firstName() {
     return this._firstName;
@@ -21,8 +21,8 @@ class coachingStaff {
     return this._roll;
   }
 
-  set coachingStaff_id(coachingStaff_id) {
-    this._coachingStaff_id = coachingStaff_id;
+  set id(id) {
+    this._id = id;
   }
   set firstName(firstName) {
     this._firstName = firstName;

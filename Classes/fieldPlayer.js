@@ -1,8 +1,8 @@
 "use strict"
 
 class fieldPlayer {
-  constructor(fieldPlayer_id, firstName, lastName, number, position, preferredFoot, isReserved, pace, shooting, passing, dribble, defending, physical) {
-    this._fieldPlayer_id = fieldPlayer_id;
+  constructor(id, firstName, lastName, number, position, preferredFoot, isReserved, pace, shooting, passing, dribble, defending, physical) {
+    this._id = id;
     this._firstName = firstName;
     this._lastName = lastName;
     this._number = number;
@@ -16,8 +16,8 @@ class fieldPlayer {
     this._defending = defending;
     this._physical = physical;
   }
-  get fieldPlayer_id() {
-    return this._fieldPlayer_id;
+  get id() {
+    return this._id;
   }
   get firstName() {
     return this._firstName;
@@ -56,8 +56,8 @@ class fieldPlayer {
     return this._physical;
   }
 
-  set fieldPlayer_id(fieldPlayer_id) {
-    this._fieldPlayer_id = fieldPlayer_id;
+  set id(id) {
+    this._id = id;
   }
   set firstName(firstName) {
     this._firstName = firstName;
