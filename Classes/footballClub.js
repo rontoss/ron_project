@@ -1,10 +1,11 @@
 "use strict";
 
 class footballClub {
-  constructor(id, clubName, location, stadiumCapacity, league, squadSize) {
+  constructor(id, clubName, location, stadiumName, stadiumCapacity, league, squadSize) {
     this._id = id;
     this._clubName = clubName;
     this._location = location;
+    this._stadiumName = stadiumName;
     this._stadiumCapacity = stadiumCapacity;
     this._league = league;
     this._squadSize = squadSize;
@@ -17,6 +18,9 @@ class footballClub {
   }
   get location() {
     return this._location;
+  }
+  get stadiumName() {
+    return this._stadiumName;
   }
   get stadiumCapacity() {
     return this._stadiumCapacity;
@@ -36,6 +40,9 @@ class footballClub {
   }
   set location(location) {
     this._location = location;
+  }
+  set stadiumName(stadiumName) {
+    this._stadiumName = stadiumName;
   }
   set stadiumCapacity(stadiumCapacity) {
     this._stadiumCapacity = stadiumCapacity;
