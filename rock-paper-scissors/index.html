@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Rock Paper Scissors</h1>
+  </header>
+
+  <div class="score-board">
+    <!-- parent -->
+    <div id="user-label" class="badge">user</div> <!-- divs are block level elements -->
+    <!-- child -->
+    <div id="computer-label" class="badge">comp</div> <!-- child -->
+    <span id="user-score">0</span>:<span id="computer-score">0</span> <!-- spans are inline elements-->
+  </div>
+
+  <div class="result">
+    <p>Paper covers rock. You win!</p>
+
+  </div>
+
+  <div class="choices">
+
+    <div class="choice" id="r">
+      <img src="images/rock.png" alt="">
+      <p id="textUnderPic">Rock</p>
+    </div>
+    <div class="choice" id="p">
+      <img src="images/paper.png" alt="">
+      <p id="textUnderPic">Paper</p>
+    </div>
+    <div class="choice" id="s">
+      <img src="images/scissors.png" alt="">
+      <p id="textUnderPic">Scissors</p>
+    </div>
+
+  </div>
+  <p id="action-message">Make your move.</p>
+
+  <br>
+
+  <div class="uitleg">
+    <h4>How to play rock, paper, scissors:</h4>
+    <ul>
+      <li>Rock beats scissors ("rock crushes scissors" or sometimes "blunts scissors");</li>
+      <li>Paper beats rock ("paper covers rock");</li>
+      <li>Scissors beats paper ("scissors cuts paper");</li>
+      <li>If the same shape is chosen, the game is tied and is usually immediately replayed to break the tie.</li>
+    </ul>
+  </div>
+
+
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
